@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: #eee;
+                width: 1100px;
+                /* height: 600px; */
+                margin: 100px;
+
+
+                display: grid;
+                grid-template-columns:repeat(2,1fr) 180px;
+                grid-template-rows: 120px 75px 100px 400px 40px;
+
+                grid-gap: 20px;
+
+                grid-template-areas: "header header header"
+                                     "menu menu menu"
+                                     "box1 box2 sidebar"
+                                     "content content sidebar"
+                                     "footer footer footer";
+                
+                
+            }
+            .items{
+                color: white;
+                font-size: 30px;
+                text-align: center;
+                
+            }
+            .items1{
+                background-color: tomato;
+                grid-area: header;
+            }
+            .items2{
+                background-color: rgb(255, 244, 35);
+                grid-area: menu;
+                
+            }
+            .items3{
+                background-color: rgb(10, 224, 14);
+                grid-area: box1;
+            }
+            .items4{
+                background-color: rgb(9, 74, 240);
+                grid-area: box2;
+            }
+            .items5{
+                background-color: hotpink;
+                grid-area: sidebar;
+            
+            }
+            .items6{
+                background-color:goldenrod;
+                grid-area: content;
+            
+                
+            }
+            .items7{
+                background-color: aqua;
+                grid-area: footer;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>grid-lines nameing</h1>
+        <div class="container">
+            <div class="items items1">header</div>
+            <div class="items items2">menu</div>
+            <div class="items items3">box1</div>
+            <div class="items items4">box2</div>
+            <div class="items items5">sidebar</div>
+            <div class="items items6">content</div>
+            <div class="items items7">footer</div>
+
+        </div>
+    </body>
+</html>

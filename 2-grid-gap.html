@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: #eee;
+                width: 800px;
+                height: 800px;
+                margin: 100px;
+
+
+
+                display: grid;
+                grid-template-columns: repeat(3,1fr) ;
+                grid-template-rows: 200px 200px ;
+
+
+                /* grid-column-gap: 25px;
+                grid-row-gap: 15px; */
+
+                grid-gap: 2px 2px;
+            }
+            .items1{
+                background-color: tomato;
+            }
+            .items2{
+                background-color: rgb(24, 132, 22);
+            }
+            .items3{
+                background-color: rgb(90, 64, 145);
+            }
+            .items4{
+                background-color: rgb(2, 238, 242);
+            }
+            .items5{
+                background-color: rgb(51, 11, 4);
+            }
+            .items6{
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>grid-gap</h1>
+        <div class="container">
+            <div class="items items1">first</div>
+            <div class="items items2">second</div>
+            <div class="items items3">third</div>
+            <div class="items items4">fourth</div>
+            <div class="items items5">fivth</div>
+            <div class="items items6">sixth</div>
+        </div>
+    </body>
+</html>

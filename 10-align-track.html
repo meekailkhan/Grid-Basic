@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: #eee;
+                width: 700px;
+                height: 700px;
+                margin: 100px;
+
+
+                grid-gap: 15px;
+                
+
+                display: grid;
+                grid-template-columns: repeat(2,150px);
+                grid-template-rows: 100px 100px;
+                grid-auto-rows: 70px;
+                grid-auto-flow: row;
+
+                justify-content: space-evenly;
+                align-content: space-evenly;
+                
+
+            }
+            .items1{
+                background-color:tomato;
+            }
+            .items2{
+                background-color:yellowgreen;
+            }
+            .items3{
+                background-color:rgb(255, 174, 0);
+                grid-row: span 3;
+            }
+            .items4{
+                background-color:aqua;
+            }
+            .items5{
+                background-color:hotpink;
+            }
+            .items6{
+                background-color:burlywood;
+            }
+            .items7{
+                background-color: cadetblue;
+                grid-column: span 2;
+            }
+            .items8{
+                background-color: olive;
+            }
+        </style>
+
+    </head>
+    <body>
+      
+        <h1>align-grid-track</h1>
+      <div class="container">
+        <div class="items items1">first</div>
+        <div class="items items2">second</div>
+        <div class="items items3">third</div>
+        <div class="items items4">fourth</div>
+        <div class="items items5">fiveth</div>
+        <div class="items items6">sixth</div>
+        <div class="items items7">seventh</div>
+        <div class="items items8">eight</div>
+      </div>  
+    </body>
+
+</html>

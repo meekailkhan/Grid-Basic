@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        body {
+            background-color: #fff;
+        }
+
+        .container {
+            background-color: #eee;
+            width: 300px;
+            margin: 100px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 150px);
+
+        }
+
+        .items {
+            max-width: 150px;
+
+        }
+
+        .items1 {
+            background-color: tomato;
+            grid-column: 1/span2;
+            grid-row: 1/span2;
+            align-self: start;
+            z-index: 3;
+
+        }
+
+        .items2 {
+            background-color: hotpink;
+            grid-column: 1/span2;
+            grid-row: 1/span2;
+            align-self: center;
+            justify-self: center;
+            z-index: 1;
+        }
+
+        .items3 {
+            background-color: goldenrod;
+            grid-column: 1/span2;
+            grid-row: 1/span2;
+            align-self: end;
+            justify-self: end;
+            z-index: 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="items items1">first Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati voluptate
+            omnis laudantium, amet quibusdam et. </div>
+        <div class="items items2">second Lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, alias?
+            Nam quisquam illum ut! Veniam!</div>
+        <div class="items items3">third Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit fugit totam
+            quaerat dolorum quo ipsam!</div>
+    </div>
+
+</body>
+
+</html>

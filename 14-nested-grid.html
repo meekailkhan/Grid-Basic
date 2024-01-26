@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: #eee;
+                width: 615px;
+                margin: 100px;
+
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: 200px 200px;
+
+                grid-gap: 15px;
+            }
+            .items1{
+                background-color: tomato;
+            }
+            .items2{
+                background-color: hotpink;
+            }
+            .items3{
+                background-color: aqua;
+                display: grid;
+
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 5px;
+
+            }
+            .items4{
+                background-color: goldenrod;
+            }
+            .box1{
+                background-color: red;
+                grid-row: 2/3;
+            }
+            .box2{
+                background-color: blue;
+                grid-column: 2/3;
+            }
+            .box3{
+                background-color: green;
+                grid-row: 1/2;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>nested-container-in-grid</h1>
+        <div class="container">
+            <div class="items items1">first</div>
+            <div class="items items2">second</div>
+            <div class="items items3">
+                <div class="box box1">1</div>
+                <div class="box box2">2</div>
+                <div class="box box3">3</div>
+            </div>
+            <div class="items items4">fourth</div>
+        </div>
+    </body>
+</html>

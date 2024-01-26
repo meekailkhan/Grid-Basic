@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-color: #fff;
+            }
+            .container{
+                background-color: #eee;
+                width: 490px;
+                height: 320px;                
+                margin: 100px ;
+
+                display: grid;
+                grid-template-columns:  repeat(3,150px);
+                grid-template-rows: repeat(2,150 );
+
+                grid-gap: 20px;
+
+            }
+            .items1{
+                background-color:tomato;
+                order: 6;
+            }
+            .items2{
+                background-color:yellowgreen;
+                order: 5;
+            }
+            .items3{
+                background-color:rgb(255, 0, 0);
+                order: 4;
+            }
+            .items4{
+                background-color:aqua;
+                order: 3;
+            }
+            .items5{
+                background-color:hotpink;
+                order: 2;
+            }
+            .items6{
+                background-color:burlywood;
+                order: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="items items1">first</div>
+            <div class="items items2">second</div>
+            <div class="items items3">third</div>
+            <div class="items items4">fourth</div>
+            <div class="items items5">fiveth</div>
+            <div class="items items6">sixth</div>
+        </div>
+    </body>
+</html>
